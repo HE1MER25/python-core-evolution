@@ -33,3 +33,12 @@ i = 0
 while i < len(my_list):
     print(my_list[i])
     i += 2 # Output: 10, 4, 6
+
+# Loop Comprehension
+fruits = ["apple", "banana", "cherry"]
+newFruits = []
+
+for x in fruits:
+    if "a" in x:
+        newFruits.append(x)
+print(newFruits) # Output: ['apple', 'banana']

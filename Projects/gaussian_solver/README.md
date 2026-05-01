@@ -1,44 +1,26 @@
-# Gaussian Elimination Solver - Python Edition
-### *Linear Systems for Geoscience Data*
+# 🌍 Project Greenland: Geophysical Research Pipeline
+### *M.Sc. Applied Geophysics | University of Ibadan*
 
 ## 📌 Overview
-This script implements the **Gaussian Elimination** algorithm from scratch to solve $3 \times 3$ systems of linear equations. It is designed to demonstrate the mathematical logic behind matrix reduction without relying on high-level libraries like NumPy for the core algorithm.
+This repository serves as the computational foundation for my research on groundwater and aquifer characterization in Ibadan, Oyo State. It integrates fundamental linear algebra with automated literature surveying.
 
 ## 🛠 Features
-* **Zero-Pivot Handling:** Implements logic to handle systems with potential division-by-zero errors.
-* **System Diagnostics:** Identifies if a system is:
-    * **Independent:** A single unique solution $(x, y, z)$.
-    * **Dependent:** Infinite solutions (Linear Redundancy).
-    * **Inconsistent:** No solution (Contradictory data).
-* **Back Substitution:** Automatically solves for variables after reaching Row Echelon Form.
+
+### 1. Gaussian Elimination Solver (Python Edition)
+Implements the core mathematical logic for solving $3 \times 3$ systems of linear equations.
+* **Zero-Pivot Handling**: Manages potential division-by-zero errors during matrix reduction.
+* **System Diagnostics**: Identifies Independent, Dependent, or Inconsistent systems.
+* **Back Substitution**: Solves for variables once Row Echelon Form is achieved.
+
+### 2. Geophysical Journal Scout
+An automated tool designed to build a database of regional geophysical studies.
+* **Automated Surveying**: Uses the `scholarly` library to query Google Scholar.
+* **Categorized Output**: Organizes literature into CSV files for 1D VES, 2D ERT, Technical methods, and Localized studies (Akinyele, Iddo LGAs).
+* **Metadata Export**: Captures titles, authors, and direct publication links.
 
 ## 🚀 How to Run
-Ensure you have Python 3.x installed. Run the following in your terminal:
+Ensure you have Python 3.x and the Anaconda environment installed.
+
+### For the Gaussian Solver:
 ```bash
 python3 gaussian_interactive.py
-
-# Geophysical Journal Scout: Ibadan Basement Complex
-
-## 🌍 Research Overview
-This repository contains Phase 1 of the **Project He1mer** data pipeline. The script automates the discovery of academic literature focused on groundwater exploration within the crystalline basement rocks of **Ibadan, Oyo State, Nigeria**.
-
-The goal is to build a robust dataset comparing **1D Vertical Electrical Sounding (VES)** with **2D Electrical Resistivity Tomography (ERT)** using both conventional software and custom Python-based machine learning models.
-
-## 🛠️ Features
-- **Automated Scraping**: Leverages the `scholarly` API to survey Google Scholar.
-- **Multi-Track Categorization**: Organizes results into four specific domains:
-    - `1D_Links`: Traditional VES studies.
-    - `2D_Links`: Advanced tomography and fracture imaging.
-    - `Tech_Links`: Machine learning and inversion theory.
-    - `Localized_Links`: Specific studies within Ibadan (e.g., Akinyele, Iddo LGAs).
-- **Metadata Management**: Exports Title, Author, Year, and URL directly to `.csv` for rapid bibliography building.
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Anaconda (Python 3.9+)
-- VS Code or Jupyter Notebook
-
-### Installation
-```bash
-pip install scholarly pandas

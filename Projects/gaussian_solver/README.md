@@ -20,7 +20,7 @@ python3 gaussian_interactive.py
 # Geophysical Journal Scout: Ibadan Basement Complex
 
 ## 🌍 Research Overview
-This repository contains Phase 1 of the **Project Greenland** data pipeline. The script automates the discovery of academic literature focused on groundwater exploration within the crystalline basement rocks of **Ibadan, Oyo State, Nigeria**.
+This repository contains Phase 1 of the **Project He1mer** data pipeline. The script automates the discovery of academic literature focused on groundwater exploration within the crystalline basement rocks of **Ibadan, Oyo State, Nigeria**.
 
 The goal is to build a robust dataset comparing **1D Vertical Electrical Sounding (VES)** with **2D Electrical Resistivity Tomography (ERT)** using both conventional software and custom Python-based machine learning models.
 

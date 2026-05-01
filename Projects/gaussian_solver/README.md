@@ -24,3 +24,5 @@ Ensure you have Python 3.x and the Anaconda environment installed.
 ### For the Gaussian Solver:
 ```bash
 python3 gaussian_interactive.py
+python3 gaussian_phy781.py
+python3 journalscript.py
